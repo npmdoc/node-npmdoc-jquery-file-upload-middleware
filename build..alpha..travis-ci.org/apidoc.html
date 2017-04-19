@@ -1,0 +1,263 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/aguidrevitch/jquery-file-upload-middleware#readme"
+
+    >jquery-file-upload-middleware (v0.1.8)</a>
+</h1>
+<h4>jQuery-File-Upload Express.js Middleware</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.jquery-file-upload-middleware">module jquery-file-upload-middleware</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">jquery-file-upload-middleware.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.</span>options</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.jquery-file-upload-middleware.options">module jquery-file-upload-middleware.options</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.jquery-file-upload-middleware.options.uploadDir">
+            function <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>uploadDir
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.jquery-file-upload-middleware.options.uploadUrl">
+            function <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>uploadUrl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>maxFileSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>maxPostSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>minFileSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>acceptFileTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>accessControl</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>imageTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>imageVersions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>tmpDir</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.jquery-file-upload-middleware" id="apidoc.module.jquery-file-upload-middleware">module jquery-file-upload-middleware</a></h1>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.jquery-file-upload-middleware.options" id="apidoc.module.jquery-file-upload-middleware.options">module jquery-file-upload-middleware.options</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.jquery-file-upload-middleware.options.uploadDir" id="apidoc.element.jquery-file-upload-middleware.options.uploadDir">
+        function <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>uploadDir
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uploadDir = function () {
+    return originalValue
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+path = require(&#x27;path&#x27;),
+mkdirp = require(&#x27;mkdirp&#x27;);
+
+module.exports = function (middleware, options) {
+
+options = _.extend({
+    targetDir: function () {
+        return options.<span class="apidocCodeKeywordSpan">uploadDir</span>();
+    },
+    targetUrl: function () {
+        return options.uploadUrl();
+    }
+}, options);
+
+_.each([&#x27;targetDir&#x27;, &#x27;targetUrl&#x27;], function (key) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.jquery-file-upload-middleware.options.uploadUrl" id="apidoc.element.jquery-file-upload-middleware.options.uploadUrl">
+        function <span class="apidocSignatureSpan">jquery-file-upload-middleware.options.</span>uploadUrl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uploadUrl = function () {
+    return originalValue
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports = function (middleware, options) {
+
+options = _.extend({
+    targetDir: function () {
+        return options.uploadDir();
+    },
+    targetUrl: function () {
+        return options.<span class="apidocCodeKeywordSpan">uploadUrl</span>();
+    }
+}, options);
+
+_.each([&#x27;targetDir&#x27;, &#x27;targetUrl&#x27;], function (key) {
+    if (!_.isFunction(options[key])) {
+        var originalValue = options[key];
+        options[key] = function () {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
